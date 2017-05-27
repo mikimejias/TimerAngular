@@ -5,10 +5,7 @@
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      body {color:#369;font-family: Arial,Helvetica,sans-serif;}
-    </style>
-
+    
     <!-- Polyfills -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
 
@@ -18,10 +15,28 @@
     <script>
       System.import('main.js').catch(function(err){ console.error(err); });
     </script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
   <body>
-    <my-app>Loading AppComponent content here ...</my-app>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <my-app>Loading AppComponent content here ...</my-app>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="text-center">
+        <timer></timer>
+      </div>
+    </div>
+    
+
+    
   </body>
 
 </html>
